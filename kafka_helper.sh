@@ -43,7 +43,7 @@ Example: kafka_helper topics
 Options:
     ${CYAN}topics${NC}      List all Kafka topics
     ${CYAN}pushdata${NC}    Push data from weatherdata.json onto Kafka topic
-    ${CYAN}readweather${NC} Read data from Kafka topic
+    ${CYAN}readdata${NC}    Read data from Kafka topic
     "
     exit 0
 }
