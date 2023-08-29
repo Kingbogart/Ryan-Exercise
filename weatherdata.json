@@ -1,0 +1,9 @@
+{
+    "date": "2019-01-01T00:00:00Z",
+    "temperature": 32,
+    "humidity": 50,
+    "pressure": 1000,
+    "wind": 10,
+    "windDirection": 180,
+    "rain": 0
+}

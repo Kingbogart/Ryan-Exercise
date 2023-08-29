@@ -1,0 +1,19 @@
+Thank you for agreeing to this coding exercise. Please note that this exercise is to gauge code quality that you produce. So please keep in mind clean code with good design patterns including extensibility, scalability, and performance. Feel free to add comments based on items that you may not be able to get to in the exercise or to explain why you decided to build the code the way you did. 
+ 
+------------------------------
+        PROBLEM
+------------------------------
+The client has asked for a simple .net core application that will listen into a Kafka topic called "WeatherData" and forward any data found on the topic to a REST endpoint. 
+Please note the REST endpoint in this case will be an empty endpoint but the user should be able to plug in any URL for a REST endpoint to push the data on the topic to. 
+
+
+------------------------------
+        TOOLS PROVIDED
+------------------------------
+The following tools have been provided to you to help you complete this exercise.
+1. A Kafka cluster with a topic called "WeatherData" that you can use to test your application.
+    a. The Kafka cluster is ran in Docker with docker compose and may be spun up with the following command:
+        docker-compose up -d
+2. A script to interact with the Kafka cluster. The script is located in the root of the project and is called "kafka_helper.sh"
+3. Sample data that you can use to test your application. The sample data is located in the root of the project and is called "weatherdata.json"
+    a. Note this is a very simple example of data, and is used by the kafka_helper.sh file to upload data to the Kafka cluster.
