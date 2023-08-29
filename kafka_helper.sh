@@ -13,19 +13,19 @@ INFO="[${CYAN}i${NC}]"
 ALERT="[${YELLOW}⚠${NC}]"
 
 listtopics() {
-    docker run --tty --network codingchallenge_default confluentinc/cp-kafkacat kafkacat -b kafka:9092 -L
+    docker run --tty --network coding_exercise_default confluentinc/cp-kafkacat kafkacat -b kafka:9092 -L
 }
 
 readdata() {
     docker run --tty \
-    --network codingchallenge_default \
+    --network coding_exercise_default \
     confluentinc/cp-kafkacat \
     kafkacat -b kafka:9092 -C \
     -t WeatherData
 }
 
 pushdata() {
-    docker run --network codingchallenge_default \
+    docker run --network coding_exercise_default \
     --volume ./weatherdata.json:/data/weatherdata.json \
     confluentinc/cp-kafkacat \
     kafkacat -b kafka:9092 \
