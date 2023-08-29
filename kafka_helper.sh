@@ -26,7 +26,7 @@ readdata() {
 
 pushdata() {
     docker run --network coding_exercise_default \
-    --volume ./weatherdata.json:/data/weatherdata.json \
+    --volume $(pwd)/weatherdata.json:/data/weatherdata.json \
     confluentinc/cp-kafkacat \
     kafkacat -b kafka:9092 \
     -t WeatherData \
@@ -49,6 +49,6 @@ Options:
 case "${1}" in
     "topics") listtopics ;;
     "pushdata") pushdata ;;
-    "readweather") readdata ;;
+    "readdata") readdata ;;
     *) help ;;
 esac
