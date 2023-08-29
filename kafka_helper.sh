@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# If you get the following error:
+#   Error: /bin/bash^M: bad interpreter: No such file or directory
+#   Solution: sed -i -e 's/\r$//' filename.sh
 
 # Helpers
 GREEN='\033[92m'
