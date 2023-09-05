@@ -1,0 +1,9 @@
+﻿{
+  "KafkaConfig": {
+    "Topic": "WeatherData",
+    "GroupID": "Trihydro",
+    "BootStrapServers": "localhost:9094",
+    "ForwardEndpoint": "http://localhost:80/Weather"
+
+  }
+}
